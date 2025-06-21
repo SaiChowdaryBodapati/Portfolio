@@ -12,7 +12,7 @@ const HeroSection = () => {
     title: 'Artificial Intelligence & Data Engineer',
     valueProposition: 'Empowering businesses with GenAI, scalable data engineering, and ML-powered automation across cloud platforms.',
     mission: 'Turning complex data into actionable AI-driven insights for global impact.',
-    image: '/profile.jpg' // Your profile image - replace with your actual filename
+        image: '/Portfolio/profile.jpg' // Your profile image - replace with your actual filename
   };
 
   // Matrix-style name animation
