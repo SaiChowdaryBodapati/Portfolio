@@ -116,22 +116,20 @@ const SkillsSection = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto"></div>
         </div>
         
-        <div className="flex justify-center mb-8 flex-wrap">
-          <div className="bg-gray-800 p-2 rounded-xl md:rounded-full flex flex-wrap justify-center gap-2">
-            {categories.map(category => (
-              <button
-                key={category.name}
-                onClick={() => setFilter(category.name)}
-                className={`px-4 py-2 text-sm font-medium rounded-full transition-colors ${
-                  filter === category.name
-                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
-                    : 'text-gray-300 hover:bg-gray-700'
-                }`}
-              >
-                {category.icon} {category.name}
-              </button>
-            ))}
-          </div>
+        <div className="mb-8 p-2 bg-gray-800 rounded-xl flex flex-wrap justify-center gap-2">
+          {categories.map(category => (
+            <button
+              key={category.name}
+              onClick={() => setFilter(category.name)}
+              className={`px-4 py-2 text-sm font-medium rounded-full transition-colors ${
+                filter === category.name
+                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
+                  : 'text-gray-300 hover:bg-gray-700'
+              }`}
+            >
+              {category.icon} {category.name}
+            </button>
+          ))}
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
