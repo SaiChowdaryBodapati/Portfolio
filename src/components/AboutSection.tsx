@@ -35,7 +35,7 @@ const AboutSection = () => {
     ],
     personalInfo: [
       { label: 'Name', value: 'Saitej Chowdary Bodapati' },
-      { label: 'Email', value: 'saitej.bodapati@gmail.com' },
+      { label: 'Email', value: 'saitejdeepkumar@gmail.com' },
       { label: 'Phone', value: '+1 (123) 456-7890' },
       { label: 'Location', value: 'United States' },
       { label: 'Experience', value: '3+ Years' },
