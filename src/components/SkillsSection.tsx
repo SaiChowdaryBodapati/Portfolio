@@ -117,7 +117,7 @@ const SkillsSection = () => {
         </div>
         
         <div className="flex justify-center mb-8 flex-wrap">
-          <div className="bg-gray-800 p-2 rounded-full flex gap-2 flex-wrap justify-center">
+          <div className="bg-gray-800 p-2 rounded-xl md:rounded-full flex flex-wrap justify-center gap-2">
             {categories.map(category => (
               <button
                 key={category.name}
