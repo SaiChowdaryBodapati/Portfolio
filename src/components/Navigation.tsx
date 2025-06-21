@@ -1,9 +1,22 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
+const HamburgerIcon = () => (
+  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+  </svg>
+);
+
+const CloseIcon = () => (
+  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+  </svg>
+);
+
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,6 +44,11 @@ const Navigation = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleMobileLinkClick = (sectionId: string) => {
+    scrollToSection(sectionId);
+    setIsMobileMenuOpen(false);
   };
 
   const navItems = [
@@ -81,8 +99,41 @@ const Navigation = () => {
               Get in Touch
             </Button>
           </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+              {isMobileMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
+            </Button>
+          </div>
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div 
+          className="md:hidden fixed inset-0 bg-slate-900/95 backdrop-blur-lg z-40 flex flex-col items-center justify-center space-y-6"
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
+          {navItems.map((item) => (
+            <Button
+              key={item.name}
+              variant={activeSection === item.id ? 'secondary' : 'ghost'}
+              className="text-2xl w-full py-8"
+              onClick={() => handleMobileLinkClick(item.id)}
+            >
+              <span className="mr-4">{item.icon}</span>
+              {item.name}
+            </Button>
+          ))}
+          <Button
+            onClick={() => handleMobileLinkClick('contact')}
+            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-2xl w-full py-8 mt-4"
+          >
+            Get in Touch
+          </Button>
+        </div>
+      )}
     </header>
   );
 };
