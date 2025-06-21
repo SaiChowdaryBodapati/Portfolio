@@ -158,6 +158,8 @@ const ProjectsSection = () => {
         {/* Project filtering */}
         <div className="flex justify-center mb-12">
           <div className="bg-gray-800/50 backdrop-blur-sm p-2 rounded-full flex gap-2">
+                    <div className="flex justify-center flex-wrap mb-12">
+          <div className="bg-gray-800/50 backdrop-blur-sm p-2 rounded-full flex flex-wrap justify-center gap-2">
             {categories.map(category => (
               <button
                 key={category.name}
