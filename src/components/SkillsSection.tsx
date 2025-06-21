@@ -116,8 +116,8 @@ const SkillsSection = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto"></div>
         </div>
         
-        <div className="flex justify-center mb-8">
-          <div className="bg-gray-800 p-2 rounded-full flex gap-2">
+        <div className="flex justify-center mb-8 flex-wrap">
+          <div className="bg-gray-800 p-2 rounded-full flex gap-2 flex-wrap justify-center">
             {categories.map(category => (
               <button
                 key={category.name}
