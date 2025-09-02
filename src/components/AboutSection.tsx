@@ -27,42 +27,42 @@ const AboutSection = () => {
   }, []);
 
   const aboutData = {
-    subtitle: 'Passionate about transforming data into actionable insights and building innovative AI solutions.',
+    subtitle: 'Accomplished Generative AI Engineer with expertise in LLMs, GANs, Transformers, and production-ready AI solutions across energy, finance, and healthcare domains.',
     paragraphs: [
-      'I am a dedicated Artificial Intelligence & Data Engineer with a passion for transforming complex data into actionable insights. With expertise in machine learning, data engineering, and cloud technologies, I specialize in building scalable solutions that drive business value.',
-      'My journey in technology has been driven by curiosity and a desire to solve real-world problems through innovative AI solutions. I believe in continuous learning and staying at the forefront of emerging technologies.',
-      'Throughout my career, I have worked on diverse projects ranging from predictive analytics and natural language processing to large-scale data pipeline development. I enjoy collaborating with cross-functional teams and translating business requirements into technical solutions.'
+      'I am a dedicated Generative AI Engineer with over 4.5 years of experience building intelligent systems using Large Language Models (LLMs), Generative Adversarial Networks (GANs), and Transformer architectures. I specialize in developing scalable, ethical, and high-performing AI-driven applications for enterprise environments.',
+      'My expertise spans across OpenAI APIs, Azure AI, Microsoft Graph API, and MLOps workflows across AWS, GCP, and Azure. I have strong experience in multi-agent orchestration, real-time inference using FastAPI and Streamlit, and CI/CD automation with focus on energy operations, financial services, and pharmaceutical research.',
+      'Throughout my career, I have worked on diverse projects ranging from GenAI chatbots and RAG systems to large-scale ML pipeline development. I enjoy collaborating with cross-functional teams and translating business requirements into scalable AI solutions with emphasis on explainable AI and ethical compliance.'
     ],
     personalInfo: [
-      { label: 'Name', value: 'Saitej Chowdary Bodapati' },
-      { label: 'Email', value: 'saitejdeepkumar@gmail.com' },
-      { label: 'Phone', value: '+1 (123) 456-7890' },
-      { label: 'Location', value: 'United States' },
-      { label: 'Experience', value: '3+ Years' },
+      { label: 'Name', value: 'Saitej Deep Kumar Bodapati' },
+      { label: 'Email', value: 'Bodapatisaitej@gmail.com' },
+      { label: 'Phone', value: '+1-862-214-0815' },
+      { label: 'Location', value: 'Houston, Texas, USA' },
+      { label: 'Experience', value: '4.5+ Years' },
       { label: 'Availability', value: 'Open to Opportunities' }
     ],
     expertise: [
       {
-        title: 'Machine Learning & AI',
-        description: 'Deep learning, predictive modeling, NLP, computer vision, and generative AI solutions.',
+        title: 'Generative AI & LLMs',
+        description: 'LLMs, LHMs, Transformers, GANs, VAEs, Stable Diffusion, RAG systems, vector search, and multi-agent orchestration with RLHF.',
         icon: '🤖',
         color: 'from-blue-500 to-purple-500'
       },
       {
-        title: 'Data Engineering',
-        description: 'ETL/ELT pipelines, data warehousing, real-time processing, and cloud data solutions.',
+        title: 'MLOps & Data Engineering',
+        description: 'ETL/ELT pipelines, vector databases (Pinecone, Weaviate, FAISS), MLOps workflows, Kubeflow, MLflow, and production deployments.',
         icon: '⚡',
         color: 'from-green-500 to-blue-500'
       },
       {
         title: 'Cloud & DevOps',
-        description: 'AWS, Azure, GCP, Docker, Kubernetes, and infrastructure as code.',
+        description: 'AWS SageMaker, GCP Vertex AI, Azure ML, Docker, Kubernetes, CI/CD, Terraform, and infrastructure automation.',
         icon: '☁️',
         color: 'from-orange-500 to-red-500'
       },
       {
-        title: 'Full-Stack Development',
-        description: 'React, Node.js, Python, Java, and modern web technologies.',
+        title: 'AI Applications',
+        description: 'FastAPI, Streamlit, real-time inference, prompt engineering, XAI frameworks (SHAP, LIME), and agent behavior testing.',
         icon: '💻',
         color: 'from-purple-500 to-pink-500'
       }
