@@ -9,7 +9,7 @@ const StartScreen = () => {
   const [gameTitle, setGameTitle] = useState('');
   const navigate = useNavigate();
   const { score, level, highScore, achievements } = useGame();
-  const fullTitle = 'SAITEJ CHOWDARY BODAPATI';
+  const fullTitle = 'SAITEJ DEEP KUMAR BODAPATI';
 
   useEffect(() => {
     setIsVisible(true);
