@@ -27,86 +27,83 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'Advanced Deep Learning Models',
-      description: 'Comparative analysis of CNN, VGG16, and InceptionV3 for fruit image classification. Achieved 94% accuracy with InceptionV3 using transfer learning techniques.',
-      outcome: 'Improved classification accuracy by 12% over baseline models',
+      title: 'GenAI Chatbot for Customer Support',
+      description: 'Built a LangChain + OpenAI + FAISS-powered AI chatbot to resolve customer FAQs by ingesting PDF/manual content and performing semantic search over vector embeddings.',
+      outcome: 'Reduced customer response time by 35% and increased satisfaction by 20%',
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['Python', 'TensorFlow', 'CNN', 'Transfer Learning', 'InceptionV3'],
+      technologies: ['LangChain', 'OpenAI', 'FAISS', 'Azure Functions', 'Microsoft Graph API'],
       category: 'ai',
-      github: 'https://github.com/saitej-bodapati/deep-learning-models',
-      live: 'https://github.com/saitej-bodapati/deep-learning-models',
+      github: 'https://github.com/saitejchowdary/genai-chatbot',
+      live: 'https://github.com/saitejchowdary/genai-chatbot',
       featured: true
     },
     {
       id: 2,
-      title: 'Marketing Optimization ML',
-      description: 'Predictive modeling for term deposit campaigns using XGBoost, achieving 85% AUC-ROC and 82% recall. Handled imbalanced datasets with comprehensive EDA.',
-      outcome: 'Increased campaign conversion rate by 23%',
+      title: 'News Summarization & RAG Pipeline',
+      description: 'Developed GPT-4-based news summarizer using LangChain agents and Weaviate. Applied chunked embeddings and memory-enabled multi-agent querying.',
+      outcome: 'Streamlined editorial processes with automated summarization',
       image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['Python', 'XGBoost', 'Scikit-learn', 'SHAP', 'Pandas'],
+      technologies: ['GPT-4', 'LangChain', 'Weaviate', 'Multi-Agent', 'RAG'],
       category: 'ai',
-      github: 'https://github.com/saitej-bodapati/marketing-optimization',
-      live: 'https://github.com/saitej-bodapati/marketing-optimization',
+      github: 'https://github.com/saitejchowdary/news-summarization',
+      live: 'https://github.com/saitejchowdary/news-summarization',
       featured: true
     },
     {
       id: 3,
-      title: 'Cloud-Based Distributed ML',
-      description: 'Distributed machine learning pipeline on AWS using EMR, Spark, and S3. Containerized application with Docker for scalable deployment across EC2 instances.',
-      outcome: 'Reduced processing time by 65% and costs by 40%',
+      title: 'ML Model Registry & Pipeline Automation',
+      description: 'Automated deployment pipelines using MLflow with Vertex AI and SageMaker. Enabled batch inference scheduling and performance monitoring with Airflow.',
+      outcome: 'Implemented comprehensive MLOps workflows with automated model deployment',
       image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['AWS EMR', 'PySpark', 'Docker', 'EC2', 'S3'],
-      category: 'fullstack',
-      github: 'https://github.com/saitej-bodapati/distributed-ml',
-      live: 'https://github.com/saitej-bodapati/distributed-ml',
+      technologies: ['MLflow', 'Vertex AI', 'SageMaker', 'Airflow', 'CI/CD'],
+      category: 'mlops',
+      github: 'https://github.com/saitejchowdary/ml-pipeline-automation',
+      live: 'https://github.com/saitejchowdary/ml-pipeline-automation',
       featured: true
     },
     {
       id: 4,
-      title: 'Wine Quality Classification',
-      description: 'Logistic regression model for wine quality classification with comprehensive preprocessing, feature standardization, and robust evaluation metrics.',
-      outcome: 'Achieved 89% accuracy in quality prediction',
+      title: 'Sales Demand Forecasting',
+      description: 'Built seasonality-aware time series models using Facebook Prophet integrated with GCP Vertex AI for retail planning cycles.',
+      outcome: 'Improved forecast accuracy by 18% for retail planning',
       image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['Python', 'Scikit-learn', 'Logistic Regression', 'Pandas', 'NumPy'],
+      technologies: ['Facebook Prophet', 'GCP Vertex AI', 'Time Series', 'Python'],
       category: 'data',
-      github: 'https://github.com/saitej-bodapati/wine-classification',
-      live: 'https://github.com/saitej-bodapati/wine-classification',
+      github: 'https://github.com/saitejchowdary/sales-forecasting',
+      live: 'https://github.com/saitejchowdary/sales-forecasting',
       featured: false
     },
     {
       id: 5,
-      title: 'Customer Churn Prediction',
-      description: 'XGBoost and Neural Network models for customer churn prediction with 87% recall and 0.91 AUC. Built on PySpark pipeline processing 8M+ records.',
-      outcome: 'Reduced customer churn by 15% through early intervention',
+      title: 'Real-time LLM App with Vector Search',
+      description: 'Developed a Streamlit-based frontend with Pinecone + OpenAI backend for RAG-based document search. Enabled secure upload, embedding, and real-time query resolution.',
+      outcome: 'Built for business users with RAG-based document search capabilities',
       image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['PySpark', 'XGBoost', 'Neural Networks', 'AWS EMR', 'MLflow'],
+      technologies: ['Streamlit', 'Pinecone', 'OpenAI', 'RAG', 'Vector Search'],
       category: 'ai',
-      github: 'https://github.com/saitej-bodapati/churn-prediction',
-      live: null,
+      github: 'https://github.com/saitejchowdary/llm-vector-search',
+      live: 'https://github.com/saitejchowdary/llm-vector-search',
       featured: false
     },
     {
       id: 6,
-      title: 'Interview Scheduling Platform',
-      description: 'Backend development using Java Spring Boot, MySQL, and AWS. Improved scheduling speed by 50% and reduced manual coordination overhead.',
-      outcome: 'Improved scheduling efficiency by 50%',
+      title: 'HR Analytics ML Pipeline',
+      description: 'Built XGBoost + SHAP-based models for attrition and performance predictions. Integrated Power BI dashboards with real-time prediction APIs for CXO-level reporting.',
+      outcome: 'Delivered actionable insights for HR decision-making',
       image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['Java', 'Spring Boot', 'MySQL', 'AWS', 'REST APIs'],
-      category: 'fullstack',
-      github: 'https://github.com/saitej-bodapati/scheduling-platform',
-      live: 'https://github.com/saitej-bodapati/scheduling-platform',
+      technologies: ['XGBoost', 'SHAP', 'Power BI', 'REST APIs', 'Python'],
+      category: 'data',
+      github: 'https://github.com/saitejchowdary/hr-analytics',
+      live: 'https://github.com/saitejchowdary/hr-analytics',
       featured: false
     }
   ];
 
   const categories = [
     { id: 'all', name: 'All Projects', count: projects.length },
-    { id: 'fullstack', name: 'Full Stack', count: projects.filter(p => p.category === 'fullstack').length },
-    { id: 'frontend', name: 'Frontend', count: projects.filter(p => p.category === 'frontend').length },
     { id: 'ai', name: 'AI/ML', count: projects.filter(p => p.category === 'ai').length },
     { id: 'data', name: 'Data Analytics', count: projects.filter(p => p.category === 'data').length },
-    { id: 'mobile', name: 'Mobile', count: projects.filter(p => p.category === 'mobile').length },
-    { id: 'blockchain', name: 'Blockchain', count: projects.filter(p => p.category === 'blockchain').length }
+    { id: 'mlops', name: 'MLOps', count: projects.filter(p => p.category === 'mlops').length }
   ];
 
   const filteredProjects = selectedCategory === 'all' 
@@ -157,7 +154,7 @@ const ProjectsSection = () => {
         
         {/* Project filtering */}
         <div className="flex justify-center flex-wrap mb-12">
-          <div className="bg-gray-800/50 backdrop-blur-sm p-2 rounded-full flex flex-wrap justify-center gap-2">
+          <div className="bg-gray-800/50 backdrop-blur-sm p-2 rounded-xl md:rounded-full flex flex-wrap justify-center gap-2">
             {categories.map(category => (
               <button
                 key={category.name}
