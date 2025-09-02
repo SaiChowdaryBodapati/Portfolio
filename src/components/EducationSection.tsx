@@ -25,26 +25,27 @@ const EducationSection = () => {
   const education = [
     {
       degree: 'M.S Data Science',
-      institution: 'NJIT - Ying Wu College of Computing',
+      institution: 'New Jersey Institute of Technology',
       period: '2023 - 2024',
-      location: 'New Jersey, USA',
-      description: 'Master of Science in Data Science with focus on Artificial Intelligence and Machine Learning',
+      location: 'Newark, NJ, USA',
+      description: 'Master of Science in Data Science with focus on Artificial Intelligence, Machine Learning, and Big Data Analytics',
       courses: [
         'Artificial Intelligence',
         'Machine Learning', 
         'Reinforcement Learning',
-        'Big Data',
+        'Big Data Analytics',
         'Cloud Computing',
         'Deep Learning',
-        'Statistics Methods in Data Science',
-        'Statistics',
-        'Python & Mathematics',
-        'Database Management System'
+        'Statistical Methods in Data Science',
+        'Advanced Statistics',
+        'Python Programming & Mathematics',
+        'Database Management Systems'
       ],
       achievements: [
-        'Specialized in AI/ML algorithms and data processing',
+        'Specialized in AI/ML algorithms and data processing techniques',
         'Hands-on experience with cloud platforms and big data technologies',
-        'Strong foundation in statistical analysis and mathematical modeling'
+        'Strong foundation in statistical analysis and mathematical modeling',
+        'Completed capstone project in Generative AI applications'
       ],
       category: 'Graduate',
       icon: '🎓',
@@ -55,7 +56,7 @@ const EducationSection = () => {
       institution: 'Gandhi Institute of Technology and Management',
       period: '2016 - 2020',
       location: 'India',
-      description: 'Bachelor of Technology with focus on electrical systems and communication technologies',
+      description: 'Bachelor of Technology with focus on electrical systems, communication technologies, and programming fundamentals',
       courses: [
         'C Programming',
         'C++ Programming',
@@ -68,7 +69,8 @@ const EducationSection = () => {
       achievements: [
         'Strong foundation in programming and software development',
         'Understanding of electrical systems and communication protocols',
-        'Experience with database systems and quality management'
+        'Experience with database systems and quality management',
+        'Completed final year project in embedded systems'
       ],
       category: 'Undergraduate',
       icon: '⚡',
@@ -78,51 +80,51 @@ const EducationSection = () => {
 
   const courses = [
     {
-      category: 'Web Development',
-      icon: '🌐',
+      category: 'Generative AI & LLMs',
+      icon: '🤖',
       color: 'from-blue-500 to-cyan-500',
       courses: [
-        'Advanced React & Redux',
-        'Node.js & Express Mastery',
-        'GraphQL & Apollo',
-        'TypeScript Fundamentals',
-        'Next.js Full Stack'
+        'Large Language Models (LLMs)',
+        'Transformer Architectures',
+        'Generative Adversarial Networks (GANs)',
+        'Variational Autoencoders (VAEs)',
+        'Stable Diffusion & Image Generation'
       ]
     },
     {
-      category: 'Cloud & DevOps',
+      category: 'MLOps & Cloud',
       icon: '☁️',
       color: 'from-purple-500 to-pink-500',
       courses: [
-        'AWS Solutions Architect',
+        'MLflow & Experiment Tracking',
+        'Kubeflow & ML Pipelines',
+        'AWS SageMaker & GCP Vertex AI',
         'Docker & Kubernetes',
-        'CI/CD with Jenkins',
-        'Terraform Infrastructure',
-        'Microservices Architecture'
+        'CI/CD for ML Systems'
       ]
     },
     {
-      category: 'Database & Backend',
-      icon: '🗄️',
+      category: 'Vector Databases & RAG',
+      icon: '🔍',
       color: 'from-green-500 to-blue-500',
       courses: [
-        'MongoDB Advanced',
-        'PostgreSQL Optimization',
-        'Redis Caching',
-        'API Design Patterns',
-        'Database Security'
+        'Pinecone & Weaviate',
+        'FAISS & Similarity Search',
+        'Retrieval-Augmented Generation',
+        'Vector Embeddings',
+        'Semantic Search Systems'
       ]
     },
     {
-      category: 'AI & Machine Learning',
-      icon: '🤖',
+      category: 'Deep Learning & NLP',
+      icon: '🧠',
       color: 'from-orange-500 to-red-500',
       courses: [
-        'Python for AI',
-        'TensorFlow Basics',
+        'TensorFlow & PyTorch',
         'Natural Language Processing',
-        'Computer Vision',
-        'MLOps Pipeline'
+        'Computer Vision & CNNs',
+        'Reinforcement Learning',
+        'Model Optimization & Quantization'
       ]
     }
   ];
@@ -237,16 +239,16 @@ const EducationSection = () => {
             <h3 className="text-2xl font-bold text-white mb-6">Learning Statistics</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-2">4+</div>
-                <div className="text-gray-300">Years of Study</div>
+                <div className="text-3xl font-bold text-blue-400 mb-2">4.5+</div>
+                <div className="text-gray-300">Years of Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-2">50+</div>
-                <div className="text-gray-300">Courses Completed</div>
+                <div className="text-3xl font-bold text-green-400 mb-2">60+</div>
+                <div className="text-gray-300">Technologies Mastered</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-400 mb-2">15+</div>
-                <div className="text-gray-300">Certifications</div>
+                <div className="text-3xl font-bold text-purple-400 mb-2">20+</div>
+                <div className="text-gray-300">AI/ML Projects</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-pink-400 mb-2">100%</div>
