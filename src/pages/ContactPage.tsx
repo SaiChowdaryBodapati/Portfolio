@@ -39,7 +39,7 @@ const ContactPage = () => {
                   <div className="text-2xl">📧</div>
                   <div>
                     <p className="text-white font-semibold">Email</p>
-                    <p className="text-gray-400">saitej.bodapati@example.com</p>
+                    <p className="text-gray-400">Bodapatisaitej@gmail.com</p>
                   </div>
                 </div>
 
@@ -47,7 +47,7 @@ const ContactPage = () => {
                   <div className="text-2xl">💼</div>
                   <div>
                     <p className="text-white font-semibold">LinkedIn</p>
-                    <p className="text-gray-400">linkedin.com/in/saitej-bodapati</p>
+                    <p className="text-gray-400">linkedin.com/in/tejchowdary</p>
                   </div>
                 </div>
 
@@ -55,7 +55,7 @@ const ContactPage = () => {
                   <div className="text-2xl">🐱</div>
                   <div>
                     <p className="text-white font-semibold">GitHub</p>
-                    <p className="text-gray-400">github.com/saitej-bodapati</p>
+                    <p className="text-gray-400">github.com/saitejchowdary</p>
                   </div>
                 </div>
 

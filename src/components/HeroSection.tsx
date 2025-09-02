@@ -8,11 +8,11 @@ const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const heroData = {
-    name: 'Saitej Chowdary Bodapati',
-    title: 'Artificial Intelligence & Data Engineer',
-    valueProposition: 'Empowering businesses with GenAI, scalable data engineering, and ML-powered automation across cloud platforms.',
-    mission: 'Turning complex data into actionable AI-driven insights for global impact.',
-        image: '/Portfolio/profile.jpg' // Your profile image - replace with your actual filename
+    name: 'Saitej Deep Kumar Bodapati',
+    title: 'Generative AI Engineer',
+    valueProposition: 'Accomplished Generative AI Engineer with expertise in LLMs, GANs, Transformers, and production-ready AI solutions across energy, finance, and healthcare domains.',
+    mission: 'Empowering enterprises with scalable, ethical, and high-performing AI-driven applications through advanced Generative AI, MLOps, and cloud-native solutions.',
+    image: 'profile.jpg' // Your profile image - replace with your actual filename
   };
 
   // Matrix-style name animation

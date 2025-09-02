@@ -50,10 +50,10 @@ const Footer = () => {
           {/* Personal Motto */}
           <div className="mb-8">
             <p className="text-2xl md:text-3xl font-light text-gray-300 italic mb-4">
-              "Fueled by curiosity, grounded in data, and inspired by impact."
+              "Fueled by innovation, grounded in AI ethics, and inspired by transformative impact."
             </p>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-              Let's build something meaningful together -  open to new opportunities, collaborations, and ideas.
+              Let's build something meaningful together - open to new opportunities, collaborations, and ideas in Generative AI.
             </p>
           </div>
 
@@ -91,7 +91,7 @@ const Footer = () => {
               LinkedIn
             </a>
             <a 
-              href="mailto:saitejdeepkumar@gmail.com"
+              href="mailto:Bodapatisaitej@gmail.com"
               className="text-gray-500 hover:text-white transition-colors duration-300"
             >
               Email

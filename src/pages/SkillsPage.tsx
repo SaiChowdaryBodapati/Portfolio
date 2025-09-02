@@ -11,38 +11,38 @@ const SkillsPage = () => {
 
   const skillCategories = [
     {
-      title: 'Big Data & Pipelines',
-      skills: ['Spark (PySpark)', 'Hadoop', 'AWS EMR', 'ETL workflows', 'Airflow'],
+      title: 'Generative AI & LLMs',
+      skills: ['LLMs', 'Transformers', 'GANs', 'VAEs', 'Stable Diffusion', 'RLHF', 'LoRA', 'PEFT'],
       color: 'bg-blue-600',
-      icon: '💾'
-    },
-    {
-      title: 'Cloud & DevOps',
-      skills: ['AWS (EC2, S3, Lambda)', 'Git', 'Terraform', 'Docker', 'GitHub Actions'],
-      color: 'bg-green-600',
-      icon: '☁️'
-    },
-    {
-      title: 'Programming',
-      skills: ['Python', 'Java', 'SQL', 'Pandas', 'NumPy', 'C', 'C++'],
-      color: 'bg-purple-600',
-      icon: '💻'
-    },
-    {
-      title: 'Databases',
-      skills: ['PostgreSQL', 'MySQL', 'Redshift', 'Snowflake', 'SAP HANA'],
-      color: 'bg-orange-600',
-      icon: '🗄️'
-    },
-    {
-      title: 'ML & Data Science',
-      skills: ['Scikit-learn', 'XGBoost', 'TensorFlow', 'Neural Networks', 'MLflow'],
-      color: 'bg-red-600',
       icon: '🤖'
     },
     {
-      title: 'Visualization',
-      skills: ['Power BI', 'Tableau', 'Streamlit', 'Excel'],
+      title: 'ML & Deep Learning',
+      skills: ['TensorFlow', 'PyTorch', 'JAX', 'Keras', 'Scikit-learn', 'XGBoost', 'LightGBM'],
+      color: 'bg-purple-600',
+      icon: '🧠'
+    },
+    {
+      title: 'Vector Databases & RAG',
+      skills: ['Pinecone', 'Weaviate', 'FAISS', 'Milvus', 'ChromaDB', 'RAG Systems'],
+      color: 'bg-green-600',
+      icon: '🔍'
+    },
+    {
+      title: 'Cloud & MLOps',
+      skills: ['AWS SageMaker', 'GCP Vertex AI', 'Azure ML', 'MLflow', 'Kubeflow', 'Docker', 'Kubernetes'],
+      color: 'bg-orange-600',
+      icon: '☁️'
+    },
+    {
+      title: 'Programming Languages',
+      skills: ['Python', 'R', 'Java', 'C++', 'JavaScript', 'Scala'],
+      color: 'bg-red-600',
+      icon: '💻'
+    },
+    {
+      title: 'Data & Analytics',
+      skills: ['Spark', 'Hadoop', 'Databricks', 'Kafka', 'Snowflake', 'BigQuery'],
       color: 'bg-cyan-600',
       icon: '📊'
     }

@@ -67,11 +67,11 @@ const Navigation = () => {
           {/* Left - Logo and Name */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('home')}>
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg text-white font-bold text-xl">
-              SC
+              SB
             </div>
             <div>
               <p className="font-bold text-lg text-white">Saitej Bodapati</p>
-              <p className="text-sm text-gray-400">AI & Data Engineer</p>
+              <p className="text-sm text-gray-400">Generative AI Engineer</p>
             </div>
           </div>
 

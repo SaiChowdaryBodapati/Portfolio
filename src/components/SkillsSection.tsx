@@ -28,56 +28,84 @@ const SkillsSection = () => {
   }, []);
 
   const skills = [
-    // Big Data & Pipelines
-    { name: 'PySpark', icon: '⚡', category: 'Big Data', level: 90, color: 'from-orange-500 to-red-500' },
-    { name: 'Hadoop', icon: '🐘', category: 'Big Data', level: 85, color: 'from-yellow-500 to-orange-500' },
-    { name: 'AWS EMR', icon: '☁️', category: 'Cloud', level: 90, color: 'from-blue-500 to-purple-500' },
-    { name: 'Airflow', icon: '🌪️', category: 'Big Data', level: 80, color: 'from-green-500 to-blue-500' },
-    
-    // Cloud & DevOps
-    { name: 'AWS', icon: '☁️', category: 'Cloud', level: 90, color: 'from-orange-500 to-yellow-500' },
-    { name: 'Docker', icon: '🐳', category: 'DevOps', level: 85, color: 'from-blue-500 to-cyan-500' },
-    { name: 'Git', icon: '📚', category: 'DevOps', level: 90, color: 'from-red-500 to-orange-500' },
-    { name: 'Terraform', icon: '🏗️', category: 'DevOps', level: 75, color: 'from-purple-500 to-pink-500' },
-    
-    // Programming & Scripting
+    // Programming Languages
     { name: 'Python', icon: '🐍', category: 'Programming', level: 95, color: 'from-blue-500 to-yellow-500' },
-    { name: 'Java', icon: '☕', category: 'Programming', level: 85, color: 'from-red-500 to-orange-500' },
-    { name: 'SQL', icon: '🗄️', category: 'Database', level: 90, color: 'from-blue-500 to-cyan-500' },
-    { name: 'Bash', icon: '💻', category: 'Scripting', level: 80, color: 'from-green-500 to-blue-500' },
+    { name: 'R', icon: '📊', category: 'Programming', level: 90, color: 'from-blue-500 to-purple-500' },
+    { name: 'Java', icon: '☕', category: 'Programming', level: 85, color: 'from-orange-500 to-red-500' },
+    { name: 'C++', icon: '⚡', category: 'Programming', level: 80, color: 'from-blue-500 to-cyan-500' },
+    { name: 'JavaScript', icon: '⚡', category: 'Programming', level: 80, color: 'from-yellow-500 to-orange-500' },
+    { name: 'Scala', icon: '🔴', category: 'Programming', level: 75, color: 'from-red-500 to-pink-500' },
     
-    // Databases & Storage
-    { name: 'PostgreSQL', icon: '🐘', category: 'Database', level: 85, color: 'from-blue-500 to-purple-500' },
-    { name: 'MySQL', icon: '🐬', category: 'Database', level: 90, color: 'from-blue-500 to-orange-500' },
-    { name: 'Redshift', icon: '🔴', category: 'Database', level: 80, color: 'from-red-500 to-orange-500' },
-    { name: 'SAP HANA', icon: '🏢', category: 'Database', level: 75, color: 'from-blue-500 to-green-500' },
+    // Generative AI & LLMs
+    { name: 'LLMs', icon: '🧠', category: 'Generative AI', level: 95, color: 'from-blue-500 to-purple-500' },
+    { name: 'Transformers', icon: '⚡', category: 'Generative AI', level: 90, color: 'from-green-500 to-blue-500' },
+    { name: 'GANs', icon: '🎨', category: 'Generative AI', level: 90, color: 'from-purple-500 to-pink-500' },
+    { name: 'VAEs', icon: '🔮', category: 'Generative AI', level: 85, color: 'from-pink-500 to-red-500' },
+    { name: 'Stable Diffusion', icon: '🎭', category: 'Generative AI', level: 85, color: 'from-orange-500 to-yellow-500' },
+    { name: 'RLHF', icon: '🎯', category: 'Generative AI', level: 80, color: 'from-green-500 to-cyan-500' },
+    { name: 'LoRA', icon: '🎪', category: 'Generative AI', level: 85, color: 'from-cyan-500 to-blue-500' },
+    { name: 'PEFT', icon: '⚙️', category: 'Generative AI', level: 85, color: 'from-blue-500 to-indigo-500' },
     
-    // ML & Data Science
-    { name: 'Scikit-learn', icon: '🔬', category: 'ML', level: 90, color: 'from-orange-500 to-red-500' },
-    { name: 'XGBoost', icon: '🚀', category: 'ML', level: 90, color: 'from-green-500 to-blue-500' },
-    { name: 'TensorFlow', icon: '🧠', category: 'ML', level: 80, color: 'from-orange-500 to-red-500' },
-    { name: 'SHAP', icon: '📊', category: 'ML', level: 85, color: 'from-purple-500 to-pink-500' },
-    { name: 'MLflow', icon: '📈', category: 'ML', level: 80, color: 'from-blue-500 to-purple-500' },
+    // ML & Deep Learning
+    { name: 'TensorFlow', icon: '🔥', category: 'ML & DL', level: 90, color: 'from-orange-500 to-red-500' },
+    { name: 'PyTorch', icon: '⚡', category: 'ML & DL', level: 90, color: 'from-red-500 to-orange-500' },
+    { name: 'JAX', icon: '🚀', category: 'ML & DL', level: 80, color: 'from-green-500 to-blue-500' },
+    { name: 'Keras', icon: '🧩', category: 'ML & DL', level: 85, color: 'from-red-500 to-pink-500' },
+    { name: 'Scikit-learn', icon: '🔬', category: 'ML & DL', level: 90, color: 'from-orange-500 to-red-500' },
+    { name: 'XGBoost', icon: '🌳', category: 'ML & DL', level: 85, color: 'from-green-500 to-blue-500' },
+    { name: 'LightGBM', icon: '💡', category: 'ML & DL', level: 80, color: 'from-yellow-500 to-orange-500' },
     
-    // Reporting & Visualization
-    { name: 'Power BI', icon: '📊', category: 'Visualization', level: 90, color: 'from-yellow-500 to-orange-500' },
-    { name: 'Tableau', icon: '📈', category: 'Visualization', level: 75, color: 'from-blue-500 to-purple-500' },
-    { name: 'Streamlit', icon: '🎨', category: 'Visualization', level: 85, color: 'from-red-500 to-pink-500' },
+    // Vector Databases & RAG
+    { name: 'Pinecone', icon: '🌲', category: 'Vector DBs', level: 90, color: 'from-green-500 to-blue-500' },
+    { name: 'Weaviate', icon: '🕸️', category: 'Vector DBs', level: 85, color: 'from-purple-500 to-pink-500' },
+    { name: 'FAISS', icon: '🔍', category: 'Vector DBs', level: 90, color: 'from-blue-500 to-purple-500' },
+    { name: 'Milvus', icon: '🏛️', category: 'Vector DBs', level: 80, color: 'from-indigo-500 to-purple-500' },
+    { name: 'ChromaDB', icon: '🎨', category: 'Vector DBs', level: 80, color: 'from-pink-500 to-red-500' },
+    { name: 'RAG', icon: '🔗', category: 'Vector DBs', level: 90, color: 'from-blue-500 to-cyan-500' },
     
-    // Tools & Platforms
-    { name: 'JIRA', icon: '📋', category: 'Tools', level: 85, color: 'from-blue-500 to-purple-500' },
-    { name: 'Confluence', icon: '📖', category: 'Tools', level: 80, color: 'from-blue-500 to-cyan-500' },
-    { name: 'SAP', icon: '🏢', category: 'Tools', level: 80, color: 'from-blue-500 to-green-500' }
+    // Cloud Platforms
+    { name: 'AWS', icon: '☁️', category: 'Cloud', level: 90, color: 'from-orange-500 to-yellow-500' },
+    { name: 'Azure', icon: '🔷', category: 'Cloud', level: 85, color: 'from-blue-500 to-purple-500' },
+    { name: 'GCP', icon: '🌐', category: 'Cloud', level: 85, color: 'from-blue-500 to-green-500' },
+    { name: 'SageMaker', icon: '🎓', category: 'Cloud', level: 90, color: 'from-orange-500 to-red-500' },
+    { name: 'Vertex AI', icon: '🧠', category: 'Cloud', level: 90, color: 'from-blue-500 to-green-500' },
+    { name: 'Azure ML', icon: '🔷', category: 'Cloud', level: 85, color: 'from-blue-500 to-purple-500' },
+    
+    // MLOps & DevOps
+    { name: 'MLflow', icon: '📈', category: 'MLOps', level: 90, color: 'from-blue-500 to-purple-500' },
+    { name: 'Kubeflow', icon: '🚢', category: 'MLOps', level: 85, color: 'from-blue-500 to-cyan-500' },
+    { name: 'Docker', icon: '🐳', category: 'MLOps', level: 90, color: 'from-blue-500 to-cyan-500' },
+    { name: 'Kubernetes', icon: '⚓', category: 'MLOps', level: 85, color: 'from-blue-500 to-indigo-500' },
+    { name: 'Airflow', icon: '🌪️', category: 'MLOps', level: 85, color: 'from-green-500 to-blue-500' },
+    { name: 'GitHub Actions', icon: '⚡', category: 'MLOps', level: 85, color: 'from-purple-500 to-pink-500' },
+    { name: 'Jenkins', icon: '🤖', category: 'MLOps', level: 80, color: 'from-red-500 to-orange-500' },
+    { name: 'Terraform', icon: '🏗️', category: 'MLOps', level: 80, color: 'from-purple-500 to-pink-500' },
+    
+    // Data & Storage
+    { name: 'Spark', icon: '⚡', category: 'Data Tools', level: 90, color: 'from-orange-500 to-red-500' },
+    { name: 'Hadoop', icon: '🐘', category: 'Data Tools', level: 85, color: 'from-yellow-500 to-orange-500' },
+    { name: 'Databricks', icon: '🧱', category: 'Data Tools', level: 80, color: 'from-orange-500 to-red-500' },
+    { name: 'Kafka', icon: '📡', category: 'Data Tools', level: 80, color: 'from-green-500 to-blue-500' },
+    { name: 'Snowflake', icon: '❄️', category: 'Data Tools', level: 85, color: 'from-blue-500 to-cyan-500' },
+    { name: 'BigQuery', icon: '📊', category: 'Data Tools', level: 85, color: 'from-blue-500 to-cyan-500' },
+    
+    // Visualization & Tools
+    { name: 'Streamlit', icon: '🎨', category: 'Visualization', level: 90, color: 'from-red-500 to-pink-500' },
+    { name: 'Tableau', icon: '📈', category: 'Visualization', level: 85, color: 'from-blue-500 to-purple-500' },
+    { name: 'Power BI', icon: '📊', category: 'Visualization', level: 85, color: 'from-yellow-500 to-orange-500' },
+    { name: 'Gradio', icon: '🎭', category: 'Visualization', level: 80, color: 'from-green-500 to-blue-500' },
+    { name: 'FastAPI', icon: '🚀', category: 'Visualization', level: 90, color: 'from-green-500 to-blue-500' }
   ];
 
   const categories = [
     { name: 'All', icon: '🌟' },
-    { name: 'Big Data', icon: '⚡' },
-    { name: 'Cloud', icon: '☁️' },
-    { name: 'DevOps', icon: '⚙️' },
     { name: 'Programming', icon: '💻' },
-    { name: 'Database', icon: '🗄️' },
-    { name: 'ML', icon: '🤖' },
+    { name: 'Generative AI', icon: '🤖' },
+    { name: 'ML & DL', icon: '🧠' },
+    { name: 'Vector DBs', icon: '🔍' },
+    { name: 'Cloud', icon: '☁️' },
+    { name: 'MLOps', icon: '⚙️' },
+    { name: 'Data Tools', icon: '🗄️' },
     { name: 'Visualization', icon: '📊' }
   ];
 

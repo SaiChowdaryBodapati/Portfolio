@@ -197,44 +197,60 @@ const ContactSection = () => {
 
   const contactInfo = [
     {
-      icon: '📧',
       title: 'Email',
-      value: 'saitejdeepkumar@gmail.com',
-      description: 'Drop me a line anytime',
-      color: 'from-blue-500 to-cyan-500',
-      link: 'mailto:saitejdeepkumar@gmail.com'
+      value: 'Bodapatisaitej@gmail.com',
+      icon: '📧',
+      link: 'mailto:Bodapatisaitej@gmail.com',
+      color: 'from-blue-500 to-cyan-500'
     },
     {
-      icon: '📱',
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      description: 'Available Mon-Fri 9AM-6PM',
-      color: 'from-green-500 to-blue-500',
-      link: 'tel:+15551234567'
+      value: '+1-862-214-0815',
+      icon: '📞',
+      link: 'tel:+1-862-214-0815',
+      color: 'from-green-500 to-emerald-500'
     },
     {
-      icon: '📍',
       title: 'Location',
-      value: 'New Jersey, USA',
-      description: 'Open to remote opportunities',
-      color: 'from-purple-500 to-pink-500',
-      link: 'https://maps.google.com/?q=New+Jersey,+USA'
+      value: 'Houston, Texas, USA',
+      icon: '📍',
+      link: 'https://maps.google.com/?q=Houston,+Texas,+USA',
+      color: 'from-purple-500 to-pink-500'
     },
     {
-      icon: '🎓',
       title: 'Education',
       value: 'M.S Data Science - NJIT',
-      description: 'Ying Wu College of Computing',
-      color: 'from-blue-600 to-blue-700',
-      link: 'https://www.njit.edu/'
+      icon: '🎓',
+      link: 'https://www.njit.edu/',
+      color: 'from-orange-500 to-red-500'
     }
   ];
 
   const socialLinks = [
-    { name: 'GitHub', icon: <GitHubIcon />, url: 'https://github.com/saitej-bodapati', color: 'bg-gray-800 hover:bg-gray-700' },
-    { name: 'LinkedIn', icon: <LinkedInIcon />, url: 'https://www.linkedin.com/in/tejchowdary', color: 'bg-blue-600 hover:bg-blue-500' },
-    { name: 'Twitter', icon: <TwitterIcon />, url: 'https://twitter.com/saitej_bodapati', color: 'bg-blue-400 hover:bg-blue-300' },
-    { name: 'Instagram', icon: <InstagramIcon />, url: 'https://instagram.com/saitej_bodapati', color: 'bg-pink-500 hover:bg-pink-400' }
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/tejchowdary',
+      icon: <LinkedInIcon />,
+      color: 'from-blue-600 to-blue-700'
+    },
+    {
+      name: 'GitHub',
+      url: 'https://github.com/saitejchowdary',
+      icon: <GitHubIcon />,
+      color: 'from-gray-700 to-gray-800'
+    },
+    {
+      name: 'Twitter',
+      url: 'https://twitter.com/saitejchowdary',
+      icon: <TwitterIcon />,
+      color: 'from-blue-400 to-blue-500'
+    },
+    {
+      name: 'Instagram',
+      url: 'https://instagram.com/saitejchowdary',
+      icon: <InstagramIcon />,
+      color: 'from-pink-500 to-purple-500'
+    }
   ];
 
   return (
@@ -281,7 +297,7 @@ const ContactSection = () => {
                 <div>
                   <h3 className="text-xl font-bold text-white">{info.title}</h3>
                   <p className="text-gray-300">{info.value}</p>
-                  <p className="text-gray-400 text-sm">{info.description}</p>
+                  <p className="text-gray-400 text-sm">Click to {info.title.toLowerCase()}</p>
                 </div>
               </div>
             ))}
