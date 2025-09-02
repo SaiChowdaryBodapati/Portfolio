@@ -28,49 +28,68 @@ const ExperienceSection = () => {
 
   const experiences = [
     {
-      title: 'Data Integrator',
-      company: 'Intelli Data Systems Pvt Ltd',
-      period: 'March 2021 – March 2023',
-      location: 'Hyderabad, India',
-      description: 'Led data integration initiatives across clinical and supply chain datasets, working with structured and unstructured sources including Excel, PDFs, SAP exports, and SQL databases.',
+      title: 'Generative AI Engineer',
+      company: 'Chevron Corporation',
+      period: 'April 2025 – Present',
+      location: 'Houston, Texas, USA',
+      description: 'Design, build, and fine-tune generative models (LLMs, GANs, transformers) for energy applications and develop novel AI algorithms for energy-specific challenges.',
       achievements: [
-        'Created machine learning–ready datasets by automating ETL pipelines and designed Power BI dashboards',
-        'Streamlined data for analytical models using Python and SQL, improving data consistency by 98%',
-        'Applied metadata tagging and ontology mapping for data governance across product development lifecycle',
-        'Built automated validation scripts for data quality checks and schema validation',
-        'Designed Excel-based data summaries and transitioned to Power BI for automated stakeholder dashboards'
+        'Designed and deployed advanced Large Language Models (LLMs), Transformer Architectures, and Retrieval-Augmented Generation (RAG) to automate technical documentation and optimize energy operations',
+        'Built scalable Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Stable Diffusion solutions to generate realistic geological imagery for reservoir analysis',
+        'Designed Conversational AI, Chatbots, and Intelligent Assistants powered by LLMs to support field engineers with real-time troubleshooting',
+        'Implemented Explainable AI (XAI), SHAP, and LIME frameworks to ensure transparency and trust in decision-making processes',
+        'Enhanced enterprise workflows using MLOps Pipelines, Kubeflow, and MLflow for seamless generative model training and deployment at scale',
+        'Collaborated on Cloud-Native AI Infrastructure (AWS SageMaker, GCP Vertex AI) for scalable and cost-effective generative AI solutions'
       ],
-      technologies: ['Python', 'SQL', 'Power BI', 'SAP', 'ETL Pipelines', 'Data Governance'],
+      technologies: ['LLMs', 'RAG', 'GANs', 'VAEs', 'SHAP', 'LIME', 'Chatbots', 'MLOps', 'Kubeflow', 'MLflow', 'AWS SageMaker', 'GCP Vertex AI', 'Python', 'Kubernetes', 'TensorFlow', 'PyTorch'],
     },
     {
-      title: 'Backend Developer',
-      company: 'Wipro Technologies',
-      period: 'April 2020 - August 2021',
+      title: 'Machine Learning Engineer',
+      company: 'Comerica Incorporated',
+      period: 'April 2024 – March 2025',
+      location: 'Dallas, Texas, USA',
+      description: 'Design, build, and train machine learning models using various algorithms and frameworks to enhance financial decision-making processes.',
+      achievements: [
+        'Designed and implemented advanced Machine Learning Models using Python and Scikit-learn to predict customer credit risk and enhance fraud detection',
+        'Built scalable Data Pipelines with Apache Spark, SQL, and ETL frameworks to process high-volume financial transactions',
+        'Applied Natural Language Processing (NLP), Transformers, and Generative AI for intelligent document processing and customer sentiment analysis',
+        'Developed and deployed Deep Learning Architectures using TensorFlow and PyTorch to optimize loan approval workflows and automate risk modelling',
+        'Leveraged Cloud Platforms with MLOps frameworks to streamline model deployment and monitor model drift',
+        'Integrated Kubernetes, Docker, and Microservices with robust CI/CD pipelines for scalable model deployment'
+      ],
+      technologies: ['Python', 'Scikit-learn', 'Apache Spark', 'SQL', 'ETL', 'NLP', 'TensorFlow', 'PyTorch', 'MLOps', 'Kubernetes', 'Docker', 'Azure ML', 'Azure Data Factory'],
+    },
+    {
+      title: 'Data Scientist',
+      company: 'Citibank India (Wipro)',
+      period: 'April 2022 – July 2023',
       location: 'Bangalore, India',
-      description: 'Led backend development of internal interview scheduling platform using Java Spring Boot, MySQL, and AWS, resulting in 50% improvement in scheduling speed.',
+      description: 'Design, build, and optimize machine learning algorithms and statistical models to forecast trends, predict market movements, and assess risk.',
       achievements: [
-        'Developed and integrated REST APIs to streamline data communication between services',
-        'Integrated SAP modules to retrieve employee onboarding data and map with internal HR applications',
-        'Built automation scripts using Python and SAP BAPI/RFC APIs to reduce data pull latency',
-        'Created Power BI dashboards for HR analytics by connecting SAP exports and MySQL views',
-        'Participated in cloud infrastructure design and provisioned AWS resources (S3, EC2, Lambda)'
+        'Designed and implemented advanced Machine Learning, Deep Learning, and Natural Language Processing (NLP) models for fraud detection and risk scoring',
+        'Utilized Python, R, and SQL for data preprocessing, statistical modelling, and algorithm development with high accuracy',
+        'Applied Big Data technologies such as Hadoop, Spark, and Hive to process and analyse structured and unstructured financial data',
+        'Developed interactive Power BI, Tableau, and Data Visualization dashboards for portfolio management and client segmentation',
+        'Implemented Cloud-based AI solutions on Azure and GCP to build scalable machine learning pipelines',
+        'Built Generative AI and Large Language Models (LLMs) such as GPT and BERT to automate compliance document analysis'
       ],
-      technologies: ['Java', 'Spring Boot', 'MySQL', 'AWS', 'REST APIs', 'SAP', 'Power BI'],
+      technologies: ['Machine Learning', 'NLP', 'Python', 'R', 'SQL', 'Hadoop', 'Spark', 'Hive', 'Power BI', 'Tableau', 'Azure', 'GCP', 'MLOps', 'LLMs', 'GPT', 'BERT'],
     },
     {
-      title: 'Data Science Intern',
-      company: 'Nexus AI Labs',
-      period: 'September 2019 – January 2020',
-      location: 'Remote',
-      description: 'Built PySpark-based data pipeline on AWS EMR to process over 8 million e-commerce records for customer churn prediction.',
+      title: 'Data Scientist',
+      company: 'Aurobindo Pharma Limited',
+      period: 'June 2020 – March 2022',
+      location: 'Bangalore, India',
+      description: 'Design, build, and optimize machine learning and statistical models to predict trends, identify potential drug candidates, and forecast trial outcomes.',
       achievements: [
-        'Developed XGBoost and Neural Network models to predict customer churn (Recall = 87%, AUC = 0.91)',
-        'Automated model retraining with Airflow and containerized the stack with Docker',
-        'Created real-time monitoring dashboards in Streamlit deployed on EC2',
-        'Used SHAP for model interpretability and validated outcomes with A/B testing',
-        'Tracked experiments using MLflow for reproducible machine learning workflows'
+        'Implemented Time Series Forecasting, ARIMA, and LSTM models to predict drug demand and optimize supply chain management',
+        'Applied Image Processing, Computer Vision, and CNNs on medical imaging datasets to assist in disease diagnosis',
+        'Integrated Big Data frameworks (Hive, Pig, and Spark SQL) for querying and processing large volumes of patient and drug trial data',
+        'Designed and deployed Natural Language Processing (NLP, BERT, and Transformers) models to analyse clinical trial reports and research papers',
+        'Built Knowledge Graphs, Graph Neural Networks (GNNs), and Neo4j frameworks to map drug-gene interactions',
+        'Collaborated with R&D teams to implement Generative AI models (GANs, Variational Autoencoders) for molecular structure simulation'
       ],
-      technologies: ['PySpark', 'AWS EMR', 'XGBoost', 'Neural Networks', 'Docker', 'Streamlit', 'MLflow'],
+      technologies: ['Time Series Forecasting', 'ARIMA', 'LSTM', 'CNNs', 'Hive', 'Pig', 'Spark SQL', 'MLOps', 'NLP', 'BERT', 'GNNs', 'Neo4j', 'Airflow', 'XGBoost', 'GANs'],
     }
   ];
 
