@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "type": "module",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@radix-ui/react-scroll-area": "^1.2.10",
